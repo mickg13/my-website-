@@ -1,0 +1,178 @@
+
+nav{
+  z-index: 2;
+}
+/*******************header********/
+.header-wraper{
+  position: relative;
+  background:url("computer4.jpeg") no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 90vh;
+  
+  
+}
+.main-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 3;
+}
+.main-info h1{
+  color: rgba(255, 255, 0, 0.555);
+  text-transform: uppercase;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+ 
+}
+.typed-text{
+  font-size: 2rem;
+  color: white;
+}
+.button{
+  font-size:1.25rem ;
+  cursor: pointer;
+}
+
+/******************* Typed text ********/
+
+.particales{
+  z-index: 3;
+}
+
+/******************* About me ********/
+
+.image-wraper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img{
+width: 5rem;
+border-radius: 50%;
+
+border: 1px solid yellow;
+}
+.about-title{
+  text-transform: uppercase;
+  color: tomato;
+}
+@media(max-width:476){
+  .profile-img{
+    width: 10rem;
+  }
+}
+/******************* paricles ********/
+.tsparticles-canvas-el{
+
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width:768px){
+  .particle-canves{
+    display: none;
+  }
+  
+}
+/******************* Contact me ********/
+.contact3 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+  padding: 2.5rem;
+ 
+  
+  /* margin-left: 1.25rem; */
+}
+.address{
+  width: 3rem;
+  margin-right: 1.25rem;
+  margin-top: 1.45rem;
+}
+.contact-icons{
+  display: flex;
+}
+.wraper{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.display-flex{
+  display: flex;
+}
+.contactTitle{
+  color: tomato;
+}
+@media screen and (max-width: 360px){
+  .wraper{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 1.25rem ;
+  }
+  .address{
+    width: 2.70rem;
+  }
+  
+}
+/******************* upoladImage ********/
+.galleryLoggedIn{
+  background-color: white !important;
+  width: 100%;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  padding: 12px 16px;
+  border-radius: 6px;
+}
+p{
+  text-align: center;
+  color: palevioletred;
+}
+textarea{
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  resize: none;
+}
+textarea:focus{
+  outline: none;
+}
+input {
+  display: none;
+}
+.uploadBtn{
+  border: none;
+  background-color: white !important;
+}
+.galleryBottom{
+  display: flex;
+  justify-content: space-between;
+}
+#image_preview{
+  display: none;
+  margin: 12px 0px;
+  border-radius: 6px;
+  max-width: 50%;
+object-fit: contain;
+}
+@media(max-width:768px){
+  .contactIcons{
+    display: block;
+  }
+}

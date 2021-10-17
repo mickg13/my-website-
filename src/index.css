@@ -1,0 +1,161 @@
+
+html, body {
+  overflow-x: hidden;
+  
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -10px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+ 
+  margin-bottom: 30px;
+}
+
+.model{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  transition:  opacity .4s  ease,  visibility .4s ease,  transform .5s ease-in-out ;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+.open{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+
+}
+.model  img{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+}
+.open svg{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  cursor: pointer;
+}
+.pics img{
+  cursor: pointer;
+}
+.cardContainer{
+  border-radius: 5px  black solid;
+/* 
+  z-index: 1; */
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.container1{
+  width: 100%;
+  padding:60px 60px;
+  position:-webkit-sticky;
+  bottom: -10;
+  
+  background: radial-gradient(circle,rgb(184 153 177 / 13%)0%,rgb(191 188 193 / 49%)10%); 
+}
+.column{
+  display:flex;
+  margin-left: 40px;
+  margin-right: 80px;
+  flex-direction:column;
+  text-align: left;
+  
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+}
+.link{
+  color: #fff;
+  margin-bottom: 2px;
+  font-size: 18px;
+  text-decoration: none;
+
+  
+}
+.link svg{
+  font-size: 30px;
+  color: rgb(165, 30, 75);
+}
+.title{
+  color: palevioletred;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.iconsBackround{
+
+  size: 100px;
+}
+@media screen and (max-width:768px){
+  .row{
+  display: inline-block;
+  width: 100%;
+
+  }
+  .displayFlex{
+    display: block;
+    padding: 10px;
+    width: 100%;
+  }
+}
+ span{
+  color: white;
+}
+.conatctImage{
+  
+  width: 380px;
+  height: 450px;
+}
