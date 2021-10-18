@@ -11,7 +11,7 @@ const ContactIcons = () => {
             </div>
             <div>
                 <h6 className="contactTitle">Address</h6>
-                <p style={{color:"#27273f"}}>Tel aviv <br />Sudan</p>
+                <p style={{color:"#27273f"}}>Tel aviv <br />Israel</p>
             </div>
             </div>
         
